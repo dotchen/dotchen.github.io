@@ -1,0 +1,38 @@
+---
+layout: default
+title: Blog
+cover: false
+about: 'about.html'
+blog: 'blog.html'
+resume: assets/Dian_Chen_CV.pdf
+cover: assets/images/Header.jpg
+---
+
+<header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
+    <nav class="main-nav overlay clearfix">
+        {% if page.logo %}
+            <a class="blog-logo" href="{{ site.baseurl }}">
+                <img src="{{ page.logo }}" alt="Blog Logo" />
+            </a>
+        {% endif %}
+<!--         <a class="subscribe-button icon-feed" href="{{ site.baseurl }}rss.xml">Subscribe</a> -->
+
+        <div style="float:right">
+            <p><a class="index-button" href="{{ page.about }}">About Me</a></p>
+            <p><a class="index-button" href="{{ page.resume }}">Resume</a></p>
+            <p><a class="index-button" href="{{ page.blog }}">Blog</a></p>
+            <p><a class="index-button" href="{{ side.baseurl }}">Projects</a></p>
+        </div>
+    </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h2 class="page-title">{{ site.name }}</h1>
+            <h3 class="page-description">
+                {% if site.description %} {{ site.description }} {% endif %}
+            </h2>
+        </div>
+    </div>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+</header>
+
+
