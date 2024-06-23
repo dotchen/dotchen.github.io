@@ -1,38 +1,445 @@
----
-layout: default
-title: Blog
-cover: false
-about: 'about.html'
-blog: 'blog.html'
-resume: assets/Dian_Chen_CV.pdf
-cover: assets/images/Header.jpg
----
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta name=viewport content=“width=800”>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+    a {
+    color: #1772d0;
+    text-decoration:none;
+    }
+    a:focus, a:hover {
+    color: #f09228;
+    text-decoration:none;
+    }
+    body,td,th,tr,p,a {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px
+    }
+    strong {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    }
+    heading {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 22px;
+    }
+    papertitle {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700
+    }
+    name {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 32px;
+    }
+    .one
+    {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    }
+    .two
+    {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    }
+    .fade {
+     transition: opacity .2s ease-in-out;
+     -moz-transition: opacity .2s ease-in-out;
+     -webkit-transition: opacity .2s ease-in-out;
+    }
+    span.highlight {
+        background-color: #ffffd0;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="seal_icon.png">
+  <title>Dian Chen</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+    <td>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="67%" valign="middle">
+        <p align="center">
+          <name>Dian  Chen &#38472;&#20856;</name>
+        </p>
+	<p>I am currently a senior research scientist at <a href="https://waabi.ai/" >Waabi</a>. I obtained my Ph.D in CS at UT Austin, under the supervision of Prof. <a href="http://www.philkr.net/">Philipp Kr&auml;henb&uuml;hl
+	</a>. During this time, I interned at <a href="https://waymo.com/">Waymo</a>, working on multi-agent behavior prediction.</p>
+	Before that, I studied at UC Berkeley majoring in Computer Science and Applied Mathematics, where I worked with Prof. <a href="https://people.eecs.berkeley.edu/~pulkitag/">Pulkit Agrawal</a>, Prof. <a href="https://people.eecs.berkeley.edu/~pathak/">Deepak Pathak</a>, Prof. <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>, Prof. <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>, and Prof. <a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>, working on robot manipulation. <p />
+        <p align=center>
+          <a href="mailto:dianchen96@gmail.com">Email</a> &nbsp/&nbsp
+          <!-- <a href="http://www.linkedin.com/in/dianchen96/"> LinkedIn </a> &nbsp/&nbsp -->
+          <a href="http://www.github.com/dotchen/"> GitHub </a> &nbsp/&nbsp
+    <a href="https://scholar.google.com/citations?user=yn-nyJwAAAAJ">Scholar</a>
+        </p>
+        </td>
+        <td width="33%">
+        <img src="me.jpg" img style="float: right; width:200px;">
+        </td>
+      </tr>
+      </table>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="100%" valign="middle">
+          <heading>Research</heading>
+          <p>
+          My research interests lie in robotics, computer vision and machine learning including reinforcement learning. I also work on autonomous driving. 
+          </p>
+    <p>
+    </p>
+        </td>
+      </tr>
+      </table>
 
-<header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
-    <nav class="main-nav overlay clearfix">
-        {% if page.logo %}
-            <a class="blog-logo" href="{{ site.baseurl }}">
-                <img src="{{ page.logo }}" alt="Blog Logo" />
-            </a>
-        {% endif %}
-<!--         <a class="subscribe-button icon-feed" href="{{ site.baseurl }}rss.xml">Subscribe</a> -->
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+<tr>
+	                        <td width="25%">
+					                                  <img src='iccv23.jpg' style="width: 150px">
+									                                          </td>
+														                                                <script type="text/javascript">
+																					                                                        function aperture_start() {
+																													                                                                            document.getElementById('aperture_image').style.opacity = "1";
+																													                                                                  }
+        function aperture_stop() {
+		                            document.getElementById('aperture_image').style.opacity = "0";
+		                  }
+        aperture_stop()
+      </script>
+                  <td valign="top" width="75%">
+			                      <a href="https://arxiv.org/pdf/2309.16534v1.pdf"><papertitle>MotionLM: Multi-Agent Motion Forecasting as Language Modeling
+						      </papertitle></a>
+					                          <br>
+								                      <a href="https://www.ariseff.com/">Ari Seff</a>,
+										                          <a href="https://scholar.google.com/citations?user=GcBLYLIAAAAJ&hl=en">Brian Cera</a>,
+													                      <strong>Dian Chen</strong>,
+															                          <a href="https://scholar.google.com/citations?user=1O83J5MAAAAJ&hl=en">Aurick Zhou</a>,
+																		                      <a href="https://nigamaanayakanti.weebly.com/">Nigamaa Nayakanti</a>,
+																				     <a href="http://khaledrefaat.com/">Khaled S. Refaat</a>,
+																				     <a href="https://www.alrfou.com/">Rami Al-Rfou</a>
+																				     <a href="https://bensapp.github.io/">Benjamin Sapp</a><br>
+																				 <em> International Conference on Computer Vision (ICCV)</em>, 2023 <br>			                      
+																												                      <a href="https://arxiv.org/pdf/2309.16534">arxiv</a>
+																														                          <p></p>
+																																	  <p>We present MotionLM, a behavior predictor that represent continuous trajectories as sequences of discrete motion tokens. MotionLM casts multi-agent motion prediction as a language modeling task over this domain. </p>
+																																			                                                      </td>
+																																									                </tr>
+	  <tr>
+		        <td width="25%">
+				  <img src='cvpr22b.png' style="width: 150px">
+				        </td>
+					      <script type="text/javascript">
+						        function aperture_start() {
+								            document.getElementById('aperture_image').style.opacity = "1";
+								  }
+        function aperture_stop() {
+		            document.getElementById('aperture_image').style.opacity = "0";
+		  }
+        aperture_stop()
+      </script>
+            <td valign="top" width="75%">
+		    <a href="https://ut-austin-rpl.github.io/Coopernaut/"><papertitle>Coopernaut: End-to-End Driving with Cooperative Perception for Networked Vehicles</papertitle></a>
+		    <br>
+		    <a href="https://cuijiaxun.github.io/">Jiaxun Cui</a>,
+		    <a href="https://hangqiu.github.io/">Hang Qiu</a>,
+		    <strong>Dian Chen</strong>,
+		    <a href="https://www.cs.utexas.edu/~pstone/">Peter Stone</a>,
+		    <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a> <br>
+		    <em>Conference on Computer Vision and Pattern Recognition (CVPR), 2022</em><br />
+		    <a href="https://ut-austin-rpl.github.io/Coopernaut/">website</a> /
+		    <a href="https://github.com/UT-Austin-RPL/Coopernaut">code</a> /
+		    <a href="https://arxiv.org/abs/2205.02222">arxiv</a>
+		    <p></p>
+		    <p>We introduce COOPERNAUT, an end-to-end learning model that uses cross-vehicle perception for vision-based cooperative driving. Our model encodes LiDAR information into compact point-based representations that can be transmitted as messages between vehicles via realistic wireless channels.</p>
+					        </td>
+	  </tr>
+<tr>
+      <td width="25%">
+  <img src='cvpr22a.jpg' style="width: 150px">
+      </td>
+      <script type="text/javascript">
+  function aperture_start() {
+            document.getElementById('aperture_image').style.opacity = "1";
+  }
+        function aperture_stop() {
+            document.getElementById('aperture_image').style.opacity = "0";
+  }
+        aperture_stop()
+      </script>
+      <td valign="top" width="75%">
+        <a href="https://dotchen.github.io/LAV/"><papertitle>Learning from All Vehicles</papertitle></a>
+        <br>
+        <strong>Dian Chen</strong>,
+  <a href="https://www.philkr.net/">Philipp Kr&auml;henb&uuml;hl</a> <br>
+  <em>Conference on Computer Vision and Pattern Recognition (CVPR), 2022<br /> <b style="color:red">Winner of 2021 CARLA AD Challenge</b></em> <br>
+        <!-- <a href ="https://segbyexp.github.io">website</a> -->
+        <a href="https://dotchen.github.io/LAV/">website</a> /
+        <a href="https://github.com/dotchen/LAV">code</a> /
+	<a href="https://arxiv.org/pdf/2203.11934.pdf">arxiv</a>
+	<p></p>
+  <p>We present LAV, a mapless, learning-based end-to-end driving system. LAV takes as input multi-modal sensor readings and learns from all nearby vehicles in the scene for both perception and planning. At test time, LAV predicts multi-modal future trajectories for all detected vehicles, including the ego-vehicle. Our system outperforms all prior methods on the public CARLA Leaderboard by a wide margin, improving driving score by 25 and route completion rate by 24 points.</p>
+      </td>
+    </tr>
+    <tr>
+      <td width="25%">
+  <img src='iccv21.jpg' style="width: 150px">
+      </td>
+      <script type="text/javascript">
+  function aperture_start() {
+            document.getElementById('aperture_image').style.opacity = "1";
+  }
+        function aperture_stop() {
+            document.getElementById('aperture_image').style.opacity = "0";
+  }
+        aperture_stop()
+      </script>
+      <td valign="top" width="75%">
+        <a href="https://dotchen.github.io/world_on_rails/"><papertitle>Learning to Drive From a World on Rails</papertitle></a>
+        <br>
+        <strong>Dian Chen</strong>,
+        <a href="http://vladlen.info/">Vladlen Koltun</a>,
+  <a href="https://www.philkr.net/">Philipp Kr&auml;henb&uuml;hl</a> <br>
+  <em><b style="color:red">(Oral Presentation)</b> International Conference on Computer Vision (ICCV)</em>, 2021 <br>
+        <!-- <a href ="https://segbyexp.github.io">website</a> -->
+        <a href="https://dotchen.github.io/world_on_rails/">website</a> /
+        <a href="https://github.com/dotchen/WorldOnRails">code</a> /
+  <a href="https://youtu.be/HyMf5OIzgc4">video</a> /
+  <a href="https://arxiv.org/abs/2105.00636">arxiv</a>
+        <p></p>
+  <p>We present a model-based RL method for autonomous driving and navigation tasks. The world model is factorized into a passively moving environment, and a compact ego component. Our method significantly simplifies reinforcement learning. It ranks first on the CARLA leaderboard, and outperforms state-of-the-art imitation learning and model-free reinforcement learning on driving tasks. It is also an order of magnitude more sample efficient than model-free RL on the navigation games in the ProcGen benchmark.</p>
+      </td>
+    </tr>
 
-        <div style="float:right">
-            <p><a class="index-button" href="{{ page.about }}">About Me</a></p>
-            <p><a class="index-button" href="{{ page.resume }}">Resume</a></p>
-            <p><a class="index-button" href="{{ page.blog }}">Blog</a></p>
-            <p><a class="index-button" href="{{ side.baseurl }}">Projects</a></p>
-        </div>
-    </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h2 class="page-title">{{ site.name }}</h1>
-            <h3 class="page-description">
-                {% if site.description %} {{ site.description }} {% endif %}
-            </h2>
-        </div>
-    </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
-</header>
+    <tr>
+      <td width="25%">
+  <img src='corl19.jpg' style="width: 150px">
+      </td>
+      <script type="text/javascript">
+  function aperture_start() {
+            document.getElementById('aperture_image').style.opacity = "1";
+  }
+        function aperture_stop() {
+            document.getElementById('aperture_image').style.opacity = "0";
+  }
+        aperture_stop()
+      </script>
+      <td valign="top" width="75%">
+        <a href=""><papertitle>Learning by Cheating</papertitle></a>
+        <br>
+        <strong>Dian Chen</strong>,
+        <a href="http://www.bradyzhou.com/">Brady Zhou</a>,
+        <a href="http://vladlen.info/">Vladlen Koltun</a>,
+  <a href="https://www.philkr.net/">Philipp Kr&auml;henb&uuml;hl</a> <br>
+        <em>Conference on Robot Learning (CoRL)</em>, 2019 <br>
+        <!-- <a href ="https://segbyexp.github.io">website</a> -->
+        <a href="http://vladlen.info/publications/learning-by-cheating/">website</a> /
+        <a href="https://github.com/dianchen96/LearningByCheating">code</a> /
+  <a href="https://youtu.be/u9ZCxxD-UUw">video</a> /
+  <a href="https://arxiv.org/abs/1912.12294">arxiv</a>
+        <p></p>
+  <p>We present a two-stage imitation learning method for vision-based driving. Our approach achieves 100% success rate on all tasks in the original CARLA benchmark, sets a new record on the NoCrash benchmark, and reduces the frequency of infractions by an order of magnitude compared to the prior state of the art.</p>
+      </td>
+    </tr>
+    <tr>
+      <td width="25%">
+        <img src='cvpr18.jpg' style="width: 150px">
+      </td>
+        <script type="text/javascript">
+        function aperture_start() {
+        document.getElementById('aperture_image').style.opacity = "1";
+        }
+        function aperture_stop() {
+        document.getElementById('aperture_image').style.opacity = "0";
+        }
+        aperture_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+    <a href="">
+            <papertitle>Learning Instance Segmentation by Interaction</papertitle>
+    </a>
+    <br>
+    <a hred="http://people.eecs.berkeley.edu/~pathak/">Deepak Pathak</a>*,
+    <a href="https://fredshentu.github.io">Fred Shentu</a>*,
+    <strong>Dian Chen</strong>*,
+    <a href="http://people.eecs.berkeley.edu/~pulkitag/">Pulkit Agrawal</a>*,
+    <a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>,
+    <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>,
+    <a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a> (*equal contribution) <br>
+        <em><a href="https://sites.google.com/view/cvpr2018-robotic-vision/home">Robotics Vision Workshop</a>, Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2018 <br>
+        <!-- <a href ="https://segbyexp.github.io">website</a> -->
+        <a href="https://pathak22.github.io/seg-by-interaction/">website</a> /
+        <a href="https://arxiv.org/abs/1806.08354">arxiv</a>
+        <p></p>
+        <p>We present a robotic system that learns to segment its visual observations into individual objects by experimenting with its environment in a completely self-supervised manner. Our system is at par with the state-of-art instance segmentation algorithm trained with strong supervision.</p>
+      </td>
+    </tr>
+    
+    <tr>
+      <td width="25%">
+        <img src='iclr18.png' style="width: 150px">
+      </td>
+        <script type="text/javascript">
+        function aperture_start() {
+        document.getElementById('aperture_image').style.opacity = "1";
+        }
+        function aperture_stop() {
+        document.getElementById('aperture_image').style.opacity = "0";
+        }
+        aperture_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+    <a href="https://openreview.net/forum?id=BkisuzWRW">
+            <papertitle>Zero-Shot Visual Imitation</papertitle>
+    </a>
+    <br>
+    <a href="http://people.eecs.berkeley.edu/~pathak/">Deepak Pathak</a>*,
+    <a href="https://github.com/parsa-m">Parsa Mahmoudieh</a>*, 
+    <a href="https://www.linkedin.com/in/michael-luo-951b08153/">Michael Luo</a>*,
+    <a href="http://people.eecs.berkeley.edu/~pulkitag/">Pulkit Agrawal</a>*,
+    <strong>Dian Chen</strong>,
+    <a href="https://fredshentu.github.io">Fred Shentu</a>,
+    <a href="http://imaginarynumber.net/">Evan Shelhamer</a>,
+    <a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>,
+    <a href="https://people.eecs.berkeley.edu/~efros/">Alexei Efros</a>,
+    <a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a> (*equal contribution) <br>
+    <em><b style="color:red">(Oral Presentation)</b> International Conference on Learning Representation (ICLR)</em>, 2018 <br>
+        <a href ="https://pathak22.github.io/zeroshot-imitation/">website</a> / 
+        <a href="https://arxiv.org/abs/1804.08606">arxiv</a>
+        <p></p>
+        <p>We present a novel skill policy architecture and dynamics consistency loss which extend visual imitation to more complex environments while improving robustness. Experiments results are shown in a robot knot tying task and a first-person visual navigation task.</p>
+      </td>
+    </tr>
+
+    <br >
+
+    <tr>
+      <td width="25%">
+        <img src='icra17.png' style="width: 150px">
+      </td>
+        <script type="text/javascript">
+        function aperture_start() {
+        document.getElementById('aperture_image').style.opacity = "1";
+        }
+        function aperture_stop() {
+        document.getElementById('aperture_image').style.opacity = "0";
+        }
+        aperture_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+    <a href="https://arxiv.org/pdf/1703.02018.pdf">
+            <papertitle>Combining Self-Supervised Learning and Imitation for Vision-Based Rope Manipulationg</papertitle>
+    </a>
+    <br>
+    <a href="http://ashvin.me/">Ashvin Nair</a>*,
+    <strong>Dian Chen</strong>*,
+    <a href="http://people.eecs.berkeley.edu/~pulkitag/">Pulkit Agrawal</a>*,
+    <a href="http://web.mit.edu/phillipi/">Phillip Isola</a>,
+    <a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>,
+    <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>,
+    <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a> (*equal contribution) <br>
+        <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2017 <br>
+        <a href="https://ropemanipulation.github.io/">website</a> / 
+        <a href="https://arxiv.org/abs/1703.02018/">arxiv</a>
+        <p></p>
+        <p>We present a system where a robot takes as input a sequence of images of a human manipulating a rope from an initial to goal configuration, and outputs a sequence of actions that can reproduce the human demonstration, using only monocular images as input. </p>
+      </td>
+    </tr>
+
+  </table>
+
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+    <tr>
+      <td>
+        <heading>Teaching</heading>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" width="75%">
+                <a href="http://www.philkr.net/dl_class/">CS394D - Deep Learning - Fall 2020</a> <br />
+                  Teaching Assistant
+                  </td>
+                </tr>
+                    <tr>
+    <tr>
+      <td valign="top" width="75%">                               
+  <a href="http://www.philkr.net/cs395t_f19/">CS395T - Deep Learning Seminar - Fall 2019</a> <br />
+  Teaching Assistant
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" width="75%">
+        <a href="http://www.philkr.net/cs342_f18/">CS342 - Neural Networks - Fall 2018</a> <br />
+        Teaching Assistant
+      </td>
+    </tr>
+  </table>
+  
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+    <tr>
+      <td>
+  <heading>Service</heading>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" width="75%">
+	      <a href="http://www.iros2020.org/">IROS</a>, <a href="http://www.icra2021.org/">ICRA</a>, <a href="https://iclr.cc/">ICLR</a>, <a href="https://nips.cc/Conferences/2021">NeurIPS</a>, <a href="https://cvpr2022.thecvf.com/">CVPR</a>, <a href="https://icml.cc/Conferences/2022/CallForPapers">ICML</a>, <a href="https://eccv2022.ecva.net/">ECCV</a> <br />
+         Conference Reviewer
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" width="75%">
+	      <a href="https://www.ieee-ras.org/publications/ra-l"> RA-L</a>, <a href="https://mc.manuscriptcentral.com/tpami-cs">TPAMI</a>, <a href="https://mc.manuscriptcentral.com/tip-ieee">TIP</a><br />
+         Journal Reviewer
+      </td>
+    </tr>
+  </table>
+  
+
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tbody><tr>
+        <td>
+        <br>
+        <p align="right"><font size="2">
+          <a href="https://people.eecs.berkeley.edu/~barron/">template</a>
+          </font>
+        </p>
+        </td>
+      </tr>
+  </tbody></table>
+      
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117258402-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-117258402-1');
+    </script>
+    <!-- Note: plugin scripts must be included after the tracking snippet. -->
+    <script src="https://ipmeta.io/plugin.js"></script>
+    <script>
+       provideGtagPlugin({
+               serviceProvider: 'dimension1',
+               networkDomain: 'dimension3',
+               networkType: 'dimension4',
+            });
+    </script>
+    </td>
+    </tr>
+  </table>
 
 
+  </body>
+</html>
